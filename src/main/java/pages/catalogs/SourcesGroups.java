@@ -26,13 +26,15 @@ public class SourcesGroups extends BasePage {
         driver.findElement(createBtn).click();
         return this;
     }
-    public SourcesGroups createSourceGroup(){
+    public SourcesGroups createSourceGroup() throws InterruptedException {
+        Thread.sleep(3000);
         driver.findElement(nameInput).sendKeys("Automation");
         driver.findElement(submitBtn).click();
         return this;
     }
     public SourcesGroups editSourceGroup() throws InterruptedException {
         driver.findElement(editBtn).click();
+        Thread.sleep(3000);
         driver.findElement(nameInput).clear();
         driver.findElement(nameInput).sendKeys("AutomationTest");
         driver.findElement(submitBtn).click();
