@@ -23,7 +23,7 @@ public class LoginPage extends BasePage {
         driver.findElement(passwordInput).sendKeys(Keys.DELETE);
         driver.findElement(passwordInput).sendKeys(PASSWORD_ADMIN);
         driver.findElement(loginBtn).click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         return this;
     }
 

@@ -99,14 +99,14 @@ public class EpZoneHomePage extends BasePage {
         return this;
     }
 
-    public Boolean hasClearSessionButton() {
-        try {
-            WebElement sessionBtn = driver.findElement(clearSessionBtn);
-            WebDriverWait delay = new WebDriverWait(driver, EXPLICIT_WAIT);
-
-            return delay.until(ExpectedConditions.visibilityOf(sessionBtn)).isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
+//    public Boolean hasClearSessionButton() {
+//        try {
+//            WebElement sessionBtn = driver.findElement(clearSessionBtn);
+//            WebDriverWait delay = new WebDriverWait(driver, EXPLICIT_WAIT);
+//
+//            return delay.until(ExpectedConditions.visibilityOf(sessionBtn)).isDisplayed();
+//        } catch (Exception e) {
+//            return false;
+//        }
+//    }
 }

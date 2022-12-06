@@ -27,24 +27,25 @@ public class SourcesGroups extends BasePage {
         return this;
     }
     public SourcesGroups createSourceGroup() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(13000);
         driver.findElement(nameInput).sendKeys("Automation");
         driver.findElement(submitBtn).click();
         return this;
     }
     public SourcesGroups editSourceGroup() throws InterruptedException {
+        Thread.sleep(10000);
         driver.findElement(editBtn).click();
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         driver.findElement(nameInput).clear();
         driver.findElement(nameInput).sendKeys("AutomationTest");
         driver.findElement(submitBtn).click();
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         return this;
     }
     public SourcesGroups deleteSourceGroup() throws InterruptedException {
         driver.findElement(deleteBtn).click();
         driver.findElement(confirmDeleteBtn).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         return this;
     }
 
