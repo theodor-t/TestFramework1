@@ -32,7 +32,7 @@ public class CommonActions {
         //Maximize windows
         driver.manage().window().maximize();
         //Set timeout
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));
         return driver;
     }
 }

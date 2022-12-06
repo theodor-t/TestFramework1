@@ -14,7 +14,7 @@ public class Sources extends BasePage {
     private final By sourceGroupListBox = By.xpath("//div[@aria-haspopup='listbox']");
     private final By sourceGroupValue = By.xpath("//li[@data-value='1']");
 
-    public Sources createSource(){
+    public Sources createSource() {
         driver.findElement(nameInput).sendKeys("Maxim");
         driver.findElement(socialMediaLinkInput).sendKeys("https://www.instagram.com/testing/");
         driver.findElement(sourceGroupListBox).click();
