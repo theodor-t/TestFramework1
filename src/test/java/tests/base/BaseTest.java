@@ -7,7 +7,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.am_adminpanel.AdminPanel;
 import pages.am_loginpage.LoginPage;
-import pages.catalogs.SourcesGroups;
+import pages.am_catalogs.SourcesGroups;
 import pages.base.BasePage;
 import pages.community.CommunityPage;
 import pages.epl_home.EplHomePage;

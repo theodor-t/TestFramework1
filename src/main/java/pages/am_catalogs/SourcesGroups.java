@@ -1,4 +1,4 @@
-package pages.catalogs;
+package pages.am_catalogs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
