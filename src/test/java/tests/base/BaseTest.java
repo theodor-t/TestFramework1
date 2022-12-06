@@ -5,7 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import pages.am_adminpanel.AdminPanel;
 import pages.am_loginpage.LoginPage;
+import pages.catalogs.SourcesGroups;
 import pages.base.BasePage;
 import pages.community.CommunityPage;
 import pages.epl_home.EplHomePage;
@@ -34,6 +36,8 @@ public class BaseTest {
     protected EximaHomePage eximaHomePage = new EximaHomePage(driver);
     //AM
     protected LoginPage amLoginPage = new LoginPage(driver);
+    protected AdminPanel adminPanel = new AdminPanel(driver);
+    protected SourcesGroups sourcesGroups = new SourcesGroups(driver);
 
     @AfterTest
     public void clearCookiesAndLocalStorage() {

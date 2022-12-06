@@ -1,4 +1,4 @@
-package tests.am;
+package tests.am.microtests;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
