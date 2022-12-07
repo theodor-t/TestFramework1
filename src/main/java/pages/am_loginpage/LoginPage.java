@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     private final By passwordInput = By.xpath("//input[@name='password']");
     private final By loginBtn = By.xpath("//button[@type='submit']");
 
-    public LoginPage loginAdmin() throws InterruptedException {
+    public LoginPage loginAdmin() {
         driver.findElement(usernameInput).clear();
         driver.findElement(usernameInput).sendKeys(EMAIL_ADMIN);
         driver.findElement(passwordInput).sendKeys(Keys.SHIFT, Keys.ARROW_UP);

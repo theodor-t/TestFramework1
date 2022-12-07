@@ -3,7 +3,9 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -18,8 +20,10 @@ public class CommonActions {
 
         switch (PLATFORM_AND_BROWSER) {
             case "win_chrome":
+                ChromeOptions opt = new ChromeOptions();
+                opt.setHeadless(true); // INVISIBLE BROWSER = TRUE
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(opt);
                 break;
             case "win_firefox":
                 System.setProperty("webdriver.firefox.driver", "src/main/resources/firefoxdriver.exe");

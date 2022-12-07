@@ -6,8 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.am_adminpanel.AdminPanel;
+import pages.am_callcenter.Leads;
+import pages.am_callcenter.TaskTwo;
+import pages.am_callcenter.Tasks;
+import pages.am_catalogs.*;
 import pages.am_loginpage.LoginPage;
-import pages.am_catalogs.SourcesGroups;
+import pages.am_system.Users;
 import pages.base.BasePage;
 import pages.community.CommunityPage;
 import pages.epl_home.EplHomePage;
@@ -38,6 +42,24 @@ public class BaseTest {
     protected LoginPage amLoginPage = new LoginPage(driver);
     protected AdminPanel adminPanel = new AdminPanel(driver);
     protected SourcesGroups sourcesGroups = new SourcesGroups(driver);
+    protected Sources sources = new Sources(driver);
+    protected Regions regions = new Regions(driver);
+    protected Professions professions = new Professions(driver);
+    protected Offers offers = new Offers(driver);
+    protected Locations locations = new Locations(driver);
+    protected Languages languages = new Languages(driver);
+    protected Employers employers = new Employers(driver);
+    protected Employees employees = new Employees(driver);
+    protected EmployeePositions employeePositions = new EmployeePositions(driver);
+    protected Countries countries = new Countries(driver);
+    protected CompanyOffices companyOffices = new CompanyOffices(driver);
+    protected Companies companies = new Companies(driver);
+    protected CallbackReasons callbackReasons = new CallbackReasons(driver);
+    protected Brands brands = new Brands(driver);
+    protected Tasks tasks = new Tasks(driver);
+    protected TaskTwo taskTwo = new TaskTwo(driver);
+    protected Leads leads = new Leads(driver);
+    protected Users users = new Users(driver);
 
     @AfterTest
     public void clearCookiesAndLocalStorage() {

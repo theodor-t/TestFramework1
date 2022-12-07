@@ -9,7 +9,7 @@ import static constants.Constant.Urls.AM_LOGINPAGE;
 public class SourcesGroups extends BaseTest {
 
     @Test(retryAnalyzer = Retry.class, priority = 1)
-    public void addSourcesGroups() throws InterruptedException {
+    public void addSourcesGroups() {
         basePage.open(AM_LOGINPAGE);
         amLoginPage.loginAdmin();
         adminPanel.
@@ -22,7 +22,7 @@ public class SourcesGroups extends BaseTest {
     }
 
     @Test(retryAnalyzer = Retry.class, priority = 1)
-    public void editSourcesGroups() throws InterruptedException {
+    public void editSourcesGroups() {
         basePage.open(AM_LOGINPAGE);
         amLoginPage.loginAdmin();
         adminPanel.
@@ -34,7 +34,7 @@ public class SourcesGroups extends BaseTest {
     }
 
     @Test(retryAnalyzer = Retry.class, priority = 2)
-    public void deleteSourcesGroups() throws InterruptedException {
+    public void deleteSourcesGroups() {
         basePage.open(AM_LOGINPAGE);
         amLoginPage.loginAdmin();
         adminPanel.
