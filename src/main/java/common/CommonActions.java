@@ -21,7 +21,7 @@ public class CommonActions {
         switch (PLATFORM_AND_BROWSER) {
             case "win_chrome":
                 ChromeOptions opt = new ChromeOptions();
-                opt.setHeadless(true); // INVISIBLE BROWSER = TRUE
+                opt.setHeadless(false); // INVISIBLE BROWSER = TRUE
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 driver = new ChromeDriver(opt);
                 break;

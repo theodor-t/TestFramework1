@@ -20,8 +20,15 @@ public class BasePage {
         driver.get(url);
     }
 
+    public void sleep(Integer time) throws InterruptedException {
+        Thread.sleep(time);
+    }
+
     public WebElement waitElementIsVisible(WebElement element) {
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
+    //EXAMPLE FOR USING WAIT
+    //WebElement btnCreate = driver.findElement(createBtn);
+    //        waitElementIsVisible(btnCreate).click();
 }
