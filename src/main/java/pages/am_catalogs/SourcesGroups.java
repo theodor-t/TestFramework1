@@ -42,7 +42,7 @@ public class SourcesGroups extends BasePage {
     public SourcesGroups editSourceGroup() {
         driver.findElement(editBtn).click();
         driver.findElement(nameInput).clear();
-        driver.findElement(nameInput).sendKeys(RandomValues.generateRandomNumber(TWO_DIGIT));
+        driver.findElement(nameInput).sendKeys(RandomValues.appendRandomString("Test Automation"));
         driver.findElement(submitBtn).click();
         return this;
     }
