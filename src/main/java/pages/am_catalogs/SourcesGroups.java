@@ -6,6 +6,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
+import static common.RandomValues.TWO_DIGIT;
+
 public class SourcesGroups extends BasePage {
     public SourcesGroups(WebDriver driver) {
         super(driver);
@@ -40,7 +42,7 @@ public class SourcesGroups extends BasePage {
     public SourcesGroups editSourceGroup() {
         driver.findElement(editBtn).click();
         driver.findElement(nameInput).clear();
-        driver.findElement(nameInput).sendKeys(RandomValues.appendRandomString("Test Automation"));
+        driver.findElement(nameInput).sendKeys(RandomValues.generateRandomNumber(TWO_DIGIT));
         driver.findElement(submitBtn).click();
         return this;
     }
