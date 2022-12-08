@@ -1,11 +1,9 @@
 package pages.am_catalogs;
 
+import common.RandomValues;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.testng.Assert;
 import pages.base.BasePage;
 
 public class SourcesGroups extends BasePage {
@@ -34,7 +32,7 @@ public class SourcesGroups extends BasePage {
 
     public SourcesGroups createSourceGroup() {
         driver.findElements(nameInput);
-        driver.findElement(nameInput).sendKeys("Automation");
+        driver.findElement(nameInput).sendKeys(RandomValues.appendRandomString("Test Automation"));
         driver.findElement(submitBtn).click();
         return this;
     }
@@ -42,7 +40,7 @@ public class SourcesGroups extends BasePage {
     public SourcesGroups editSourceGroup() {
         driver.findElement(editBtn).click();
         driver.findElement(nameInput).clear();
-        driver.findElement(nameInput).sendKeys("AutomationTest");
+        driver.findElement(nameInput).sendKeys(RandomValues.appendRandomString("Test Automation"));
         driver.findElement(submitBtn).click();
         return this;
     }

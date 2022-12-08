@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="D:/Automatization/TestFramework">
         <classes>
-            <class name="tests.am.smoke.NavigationAll"></class>
+            <class name="tests.am.crud.catalogs.SourcesGroups"></class>
         </classes>
     </test>
 </suite>
