@@ -5,6 +5,7 @@ public class Constant {
         //Set timeout
         public static final int IMPLICIT_WAIT = 15;
         public static final int EXPLICIT_WAIT = 10;
+        public static final int SLEEP = 10;
     }
 
     public static class Urls {

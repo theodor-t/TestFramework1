@@ -30,5 +30,5 @@ public class BasePage {
     }
     //EXAMPLE FOR USING WAIT
     //WebElement btnCreate = driver.findElement(createBtn);
-    //        waitElementIsVisible(btnCreate).click();
+    //waitElementIsVisible(btnCreate).click();
 }
