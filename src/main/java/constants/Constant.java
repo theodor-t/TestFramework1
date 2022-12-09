@@ -15,7 +15,6 @@ public class Constant {
         public static final String EPL_PAGE = "https://epl.ep-zone.net/";
         public static final String EXIMA_HOMEPAGE = "https://exima.usalinksystem.net/";
         public static final String AM_LOGINPAGE = "https://am-dev.powerit.dev/en/auth/login";
-
     }
 
     public static class Accounts {

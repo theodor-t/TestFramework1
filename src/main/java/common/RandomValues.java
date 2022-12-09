@@ -9,6 +9,7 @@ public class RandomValues {
     static final int RND_LENGTH = 5;
     public static final int TWO_DIGIT = 2;
     public static final int FIVE_DIGIT = 5;
+    public static final int TEN_DIGIT = 10;
 
     public static String randomString(int len) {
         StringBuilder sb = new StringBuilder(len);
@@ -21,7 +22,6 @@ public class RandomValues {
         StringBuilder sb = new StringBuilder(numLen);
         for (int i = 0; i < numLen; i++)
             sb.append(NM.charAt(random.nextInt(NM.length())));
-        System.out.println(sb.toString());
         return sb.toString();
     }
 
