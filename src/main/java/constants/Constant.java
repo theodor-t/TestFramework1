@@ -1,5 +1,9 @@
 package constants;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 public class Constant {
     public static class TimeoutVariable {
         //Set timeout
@@ -19,20 +23,27 @@ public class Constant {
     }
 
     public static class Accounts {
-        //Agentia Muncii Admin
-        public static final String EMAIL_ADMIN = "tudoras18samp";
-        public static final String PASSWORD_ADMIN = "aple.aple123321";
-        //Single account
-        public static final String EMAIL_SINGLEACC = "buyer98@mailinator.com";
-        public static final String PASSWORD_SINGLEACC = "Tester123";
-        //Multi account
-        public static final String EMAIL_MULTIACC = "full@uls.com";
-        public static final String PASSWORD_MULTIACC = "Pa$$w0rd!";
-        //EPL Account
-        public static final String EMAIL_EPL_ACCOUNT = "shipper@uls.com";
-        public static final String PASSWORD_EPL_ACCOUNT = "Pa$$w0rd!";
-        //EXIMA Account
-        public static final String EMAIL_EXIMA = "importer100@mailinator.com";
-        public static final String PASSWORD_EXIMA = "Test123!";
+        private static final Properties properties = new Properties();
+
+        static {
+            try {
+                FileInputStream fis = new FileInputStream("src/main/resources/credentials.properties");
+                properties.load(fis);
+            } catch (IOException e) {
+                e.printStackTrace();
+                throw new RuntimeException("Failed to load credentials.properties file");
+            }
+        }
+
+        public static final String EMAIL_ADMIN = properties.getProperty("EMAIL_ADMIN");
+        public static final String PASSWORD_ADMIN = properties.getProperty("PASSWORD_ADMIN");
+        public static final String EMAIL_SINGLEACC = properties.getProperty("EMAIL_SINGLEACC");
+        public static final String PASSWORD_SINGLEACC = properties.getProperty("PASSWORD_SINGLEACC");
+        public static final String EMAIL_MULTIACC = properties.getProperty("EMAIL_MULTIACC");
+        public static final String PASSWORD_MULTIACC = properties.getProperty("PASSWORD_MULTIACC");
+        public static final String EMAIL_EPL_ACCOUNT = properties.getProperty("EMAIL_EPL_ACCOUNT");
+        public static final String PASSWORD_EPL_ACCOUNT = properties.getProperty("PASSWORD_EPL_ACCOUNT");
+        public static final String EMAIL_EXIMA = properties.getProperty("EMAIL_EXIMA");
+        public static final String PASSWORD_EXIMA = properties.getProperty("PASSWORD_EXIMA");
     }
 }
