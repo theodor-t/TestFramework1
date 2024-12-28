@@ -10,7 +10,7 @@ import java.time.Duration;
 import static constants.Constant.TimeoutVariable.EXPLICIT_WAIT;
 
 public class BasePage {
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;

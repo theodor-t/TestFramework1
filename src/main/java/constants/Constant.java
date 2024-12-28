@@ -15,12 +15,13 @@ public class Constant {
         public static final String EPL_PAGE = "https://epl.ep-zone.net/";
         public static final String EXIMA_HOMEPAGE = "https://exima.usalinksystem.net/";
         public static final String AM_LOGINPAGE = "https://am-dev.powerit.dev/en/auth/login";
+        public static final String MD999_LOGINPAGE = "https://simpalsid.com/user/login";
     }
 
     public static class Accounts {
         //Agentia Muncii Admin
-        public static final String EMAIL_ADMIN = "tudor@powerit.dev";
-        public static final String PASSWORD_ADMIN = "Pa$$w0rd!";
+        public static final String EMAIL_ADMIN = "tudoras18samp";
+        public static final String PASSWORD_ADMIN = "aple.aple123321";
         //Single account
         public static final String EMAIL_SINGLEACC = "buyer98@mailinator.com";
         public static final String PASSWORD_SINGLEACC = "Tester123";

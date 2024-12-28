@@ -22,6 +22,7 @@ public class CommonActions {
             case "win_chrome":
                 ChromeOptions opt = new ChromeOptions();
                 opt.setHeadless(false); // INVISIBLE BROWSER = TRUE
+                opt.addArguments("--remote-allow-origins=*");
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 driver = new ChromeDriver(opt);
                 break;
