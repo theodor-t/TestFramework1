@@ -1,7 +1,6 @@
 package pages.md999.loginpage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 

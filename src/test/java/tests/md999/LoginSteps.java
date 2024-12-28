@@ -22,8 +22,10 @@ public class LoginSteps extends BaseTest {
         loginPage.loginInSystem();
     }
 
-    @Then("I should be redirected to the admin dashboard")
-    public void iShouldBeRedirectedToTheAdminDashboard() {
-        System.out.println("Redirected to admin dashboard");
+    @Then("I should be redirected to the user dashboard")
+    public void iShouldBeRedirectedToTheUserDashboard() {
+        System.out.println("Redirected to user dashboard");
+        driver.close();
+
     }
 }
